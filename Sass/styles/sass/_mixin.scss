@@ -1,0 +1,10 @@
+@mixin themeDark($darkTheme: #1a1a1a) {
+    background-color: $darkTheme;
+    color: #8f8f8f;
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+@mixin themeLight($lightTheme: white) {
+    background-color: $lightTheme;
+    color: #1a1a1a;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}

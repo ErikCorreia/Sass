@@ -1,0 +1,104 @@
+/*---PARTIALS---*/
+button {
+  border: 0;
+  width: 80px;
+  height: 35px;
+  color: #fff;
+  background-color: green;
+  border-radius: 5px;
+  font-family: sans-serif;
+  margin: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #757575;
+}
+
+button[error] {
+  background-color: #da153c;
+  color: #fff;
+}
+button[error]:hover {
+  background-color: #757575;
+}
+
+section div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  border: 1px solid black;
+}
+section div span {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  transform: scale(0.8);
+}
+section div span:hover {
+  transform: scale(1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 15px 20%;
+  transition: background 0.2s;
+}
+
+body[theme=dark] {
+  background-color: #1a1a1a;
+  color: #8f8f8f;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+body[theme=light] {
+  background-color: white;
+  color: #1a1a1a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+  margin: 15px auto;
+}
+
+h1 {
+  color: green;
+}
+
+h2 {
+  text-decoration: underline;
+  margin: 15px;
+}
+
+/*---ANINHAMENTO--------------*/
+nav {
+  display: inline-block;
+  border: 1px solid;
+  margin: 10px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+nav ul li:hover {
+  text-decoration: underline;
+}
+nav ul li a {
+  color: gray;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
+/*# sourceMappingURL=main.css.map */

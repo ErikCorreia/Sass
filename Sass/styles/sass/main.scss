@@ -1,0 +1,62 @@
+/*---PARTIALS---*/
+@import "mixin";
+@import "_buttons";
+@import "containers";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+//Foca o time da transição apenas no o background
+body{
+    padding: 15px 20%;
+    transition: background 0.2s;
+}
+body[theme="dark"]{
+    @include themeDark;
+}
+body[theme="light"]{
+    @include themeLight;
+}
+
+
+hr{
+    margin: 15px auto;
+}
+
+h1{
+    color: $primary;
+}
+h2{
+    text-decoration: underline;
+    margin: 15px;
+}
+
+/*---ANINHAMENTO--------------*/
+
+nav{
+    display: inline-block;
+    border: 1px solid;
+    margin: 10px;
+    ul{
+        display: flex;
+        list-style: none;
+        li{
+            margin: 15px;
+            padding: 10px;
+            cursor: pointer;
+            &:hover{
+                text-decoration: underline;
+                
+            }
+            a{
+                color: gray;
+                text-decoration: none;
+                letter-spacing: 3px;
+                font-weight: 100;
+            }
+        }
+    }
+}
+
