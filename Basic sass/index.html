@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic sass</title>
+    <link rel="stylesheet" href="/sass/styles/css/main.css"/>
+</head>
+<body theme="light" id="body">
+    
+    <section class="main-container">
+            <h1>sass test</h1>
+        <hr/>
+        <button id="themeChanger">Change theme</button>
+
+        
+        
+        <div>
+            <h2>Variáveis</h2>
+            <button>Button</button>
+            <button error>Button</button>
+        </div>
+        <hr/>
+        
+        <div>
+            <h2>Aninhamento</h2>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <h2>Herança</h2>
+        <section style="display: flex">
+                <div class="wrapper-1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="wrapper-2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        </section>
+        
+        <h2>Mixins</h2>
+        <section class="card">
+            <div class="success"><h2>Success</h2></div>
+            <div class="warning"><h2>Warning</h2></div>
+            <div class="error"><h2>Error</h2></div>
+        </section>
+        <h2>Sass math</h2>
+        <div class="container">
+            <article role="main">
+                article
+            </article>
+            <aside role="complementary">
+                aside
+            </aside>
+        </div>
+
+    </section>
+    <script type="module" src="index.js"></script>
+</body>
+</html>

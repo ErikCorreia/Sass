@@ -22,13 +22,15 @@ button[error]:hover {
   background-color: #757575;
 }
 
-section div {
+section .wrapper-1,
+section .wrapper-2 {
   display: flex;
   flex-wrap: wrap;
   margin: 30px;
   border: 1px solid black;
 }
-section div span {
+section .wrapper-1 span,
+section .wrapper-2 span {
   display: inline-block;
   width: 150px;
   height: 150px;
@@ -36,8 +38,61 @@ section div span {
   transition: 0.5s;
   transform: scale(0.8);
 }
-section div span:hover {
+section .wrapper-1 span:hover,
+section .wrapper-2 span:hover {
   transform: scale(1);
+}
+
+.card {
+  width: fit-content;
+  padding: 15px;
+  margin: 30px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px black;
+  display: flex;
+}
+
+.warning {
+  width: fit-content;
+  padding: 15px;
+  margin: 30px;
+  border-radius: 5px;
+  background: yellow;
+  box-shadow: 0 0 5px black;
+}
+
+.success {
+  width: fit-content;
+  padding: 15px;
+  margin: 30px;
+  border-radius: 5px;
+  background: green;
+  box-shadow: 0 0 5px black;
+}
+
+.error {
+  width: fit-content;
+  padding: 15px;
+  margin: 30px;
+  border-radius: 5px;
+  background: red;
+  box-shadow: 0 0 5px black;
+}
+
+.container {
+  display: flex;
+}
+
+article[role=main] {
+  border: 1px solid red;
+  width: 70%;
+}
+
+aside[role=complementary] {
+  border: 1px solid red;
+  margin-left: auto;
+  width: 20%;
 }
 
 * {
@@ -47,7 +102,6 @@ section div span:hover {
 }
 
 body {
-  padding: 15px 20%;
   transition: background 0.2s;
 }
 
@@ -61,6 +115,11 @@ body[theme=light] {
   background-color: white;
   color: #1a1a1a;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.main-container {
+  margin: auto 15%;
+  padding: 30px;
 }
 
 hr {

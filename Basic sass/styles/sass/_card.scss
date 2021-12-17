@@ -1,0 +1,23 @@
+//Mixins pode receber parametros para atribuir a variavel 
+@mixin theme($color: rgba(0,0,0,.2)){
+    width: fit-content;
+    padding: 15px;
+    margin: 30px;
+    border-radius: 5px;
+    background: $color;
+    box-shadow: 0 0 5px rgb(0,0,0);
+}
+
+.card{
+    @include theme;
+    display: flex;
+}
+.warning{
+    @include theme($color: yellow);
+}
+.success{
+    @include theme($color: green);
+}
+.error{
+    @include theme($color: red)
+}

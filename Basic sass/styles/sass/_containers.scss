@@ -15,6 +15,7 @@
         }
     }
 }
-section div{
+section .wrapper-1,
+section .wrapper-2{
     @extend %containers;
 }

@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+}
+
+article[role=main] {
+  border: 1px solid red;
+  width: 70%;
+}
+
+aside[role=complementary] {
+  border: 1px solid red;
+  margin-left: auto;
+  width: 20%;
+}
+
+/*# sourceMappingURL=sass-math.css.map */

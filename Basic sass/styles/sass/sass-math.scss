@@ -1,0 +1,14 @@
+@use "sass:math";
+.container{
+    display: flex;
+}
+article[role="main"]{
+border: 1px solid red;
+width: math.div(70%, 100%) * 100%;
+}
+aside[role="complementary"]{
+    border: 1px solid red;
+    margin-left: auto;
+    width: math.div(20%, 100%) * 100%;
+
+}
