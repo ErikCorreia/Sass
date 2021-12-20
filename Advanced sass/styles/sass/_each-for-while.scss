@@ -1,0 +1,29 @@
+@use "sass:math";
+
+$sizes: 1, 2, 3, 4;
+@each $size in $sizes {
+    .each-wrapper .text-#{$size}{
+        font-size: math.floor(1.4em) * $size;
+    }
+}
+$base-color: rgb(8, 124, 57);
+
+@for $i from 1 through 10 {
+    .for-wrapper .text-#{$i}{
+        background-color: rgba($base-color, $i * 10%)
+    }
+}
+
+@function scale-below($value, $base, $ratio: 1.618) {
+  @while $value > $base {
+    $value: math.div($value, $ratio);
+  }
+  @return $value;
+}
+
+$normal-font-size: 16px;
+@for $i from 1 through 4 {
+    .while-wrapper .text-#{$i} {
+      font-size: scale-below(16px * $i, 80px);
+    }
+}

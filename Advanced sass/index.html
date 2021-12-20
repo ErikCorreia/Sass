@@ -5,9 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced sass</title>
-    <link rel="stylesheet" href=""
+    <link rel="stylesheet" href="styles/css/main.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Advanced sass</h1>
+<body theme="light" id="body">
+    
+    <header>
+        <div class="header-wrapper">
+            <h3>Advancing with sass</h3>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#theming">Theming</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#condicionais">Condicionais</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#loops">Loops</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#funcoes">Funções</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <article>
+            <h1>Advanced sass</h1>
+            <section id="theming">
+                <h2>Themes</h2>
+                <button id="change-theme">Change theme</button>
+                <div class="screenshots" style="width: 50%; margin: 15px;">
+                    <button class="back">Back</button>
+                    <button class="next">Next</button>
+                </div>
+            </section>
+
+            <section id="condicionais">
+                <h2>Condicionais</h2>
+                <div class="container" style="display: flex">
+                    <div class="avatar"> avatar $circle = true</div>
+                    <div class="avatar2">avatar $circle = false</div>
+                </div>
+                <div style="margin: 30px 0;">
+                    <img src="/Advanced sass/images/condicionais/screenshot1.png" alt="" width="300">
+                    <img src="/Advanced sass/images/condicionais/screenshot2.png" alt="" width="300">
+                    <img src="/Advanced sass/images/condicionais/screenshot3.png" alt="" width="300">
+                </div>
+            </section>
+
+            <section id="loops">
+                <h2>Loops</h2>
+                <h3>@each</h3>
+                <div class="each-wrapper" style="display: flex; justify-content: space-around; margin: 30px;">
+                    <h4 class="text-1">Text size</h4>
+                    <h4 class="text-2">Text size</h4>
+                    <h4 class="text-3">Text size</h4>
+                    <h4 class="text-4">Text size</h4>
+                </div>
+                <h3>@for</h3>
+                <div class="for-wrapper" style="display: flex; justify-content: space-around; margin: 30px;">
+                    <h4 class="text-1">Text size</h4>
+                    <h4 class="text-2">Text size</h4>
+                    <h4 class="text-3">Text size</h4>
+                    <h4 class="text-4">Text size</h4>
+                    <h4 class="text-5">Text size</h4>
+                    <h4 class="text-6">Text size</h4>
+                    <h4 class="text-7">Text size</h4>
+                    <h4 class="text-8">Text size</h4>
+                    <h4 class="text-9">Text size</h4>
+                    <h4 class="text-10">Text size</h4>
+                </div>
+                <h3>@while</h3>
+                <div class="while-wrapper" style="display: flex; justify-content: space-around; margin: 30px;">
+                    <h4 class="text-1">Text size</h4>
+                    <h4 class="text-2">Text size</h4>
+                    <h4 class="text-3">Text size</h4>
+                    <h4 class="text-4">Text size</h4>
+                </div>
+            </section>
+
+            <section  id="funcoes">
+                <h2>Funções</h2>
+            </section>
+
+        </article>
+    </div>
+    <script src="index.js"></script>
+
 </body>
 </html>

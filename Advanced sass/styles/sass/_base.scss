@@ -1,0 +1,26 @@
+@mixin theming($darkTheme: true){
+    @if $darkTheme {
+        background: #1a1a1a;
+        color: #d8d8d8;
+        section{
+            box-shadow: 0 0 5px rgba(255,255,255,0.5);
+        }
+    } @else {
+        background: white;
+        color: #1a1a1a;
+        section{
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        }
+    }
+}
+
+@mixin avatar($size, $circle: false) {
+    width: $size;
+    height: $size;
+    display: grid;
+    place-items: center;
+
+    @if $circle {
+        border-radius: 50%;
+    }
+}

@@ -1,3 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
+header {
+  border: 1px solid;
+  padding: 0 15%;
+  margin-bottom: 10px;
+}
+header .header-wrapper {
+  padding: 10px;
+}
 
+.main-container {
+  display: flex;
+  margin: 0 15%;
+  height: 90vh;
+  overflow: hidden;
+}
+.main-container aside {
+  width: 20%;
+  height: fit-content;
+  max-height: 80%;
+  margin-top: 80px;
+  padding: 15px;
+  border: 1px solid;
+}
+.main-container aside nav ul {
+  list-style: none;
+}
+.main-container aside nav ul li {
+  margin: 15px;
+}
+.main-container aside nav ul li a {
+  text-decoration: none;
+}
+.main-container aside nav ul li a:hover {
+  color: gray;
+}
+.main-container article {
+  width: 80%;
+  padding: 15px;
+  overflow-y: scroll;
+}
+
+button {
+  margin: 15px;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  height: 35px;
+  background: crimson;
+  cursor: pointer;
+}
+button:hover {
+  background-color: gray;
+}
+
+.each-wrapper .text-1 {
+  font-size: 1em;
+}
+
+.each-wrapper .text-2 {
+  font-size: 2em;
+}
+
+.each-wrapper .text-3 {
+  font-size: 3em;
+}
+
+.each-wrapper .text-4 {
+  font-size: 4em;
+}
+
+.for-wrapper .text-1 {
+  background-color: rgba(8, 124, 57, 0.1);
+}
+
+.for-wrapper .text-2 {
+  background-color: rgba(8, 124, 57, 0.2);
+}
+
+.for-wrapper .text-3 {
+  background-color: rgba(8, 124, 57, 0.3);
+}
+
+.for-wrapper .text-4 {
+  background-color: rgba(8, 124, 57, 0.4);
+}
+
+.for-wrapper .text-5 {
+  background-color: rgba(8, 124, 57, 0.5);
+}
+
+.for-wrapper .text-6 {
+  background-color: rgba(8, 124, 57, 0.6);
+}
+
+.for-wrapper .text-7 {
+  background-color: rgba(8, 124, 57, 0.7);
+}
+
+.for-wrapper .text-8 {
+  background-color: rgba(8, 124, 57, 0.8);
+}
+
+.for-wrapper .text-9 {
+  background-color: rgba(8, 124, 57, 0.9);
+}
+
+.for-wrapper .text-10 {
+  background-color: #087c39;
+}
+
+.while-wrapper .text-1 {
+  font-size: 16px;
+}
+
+.while-wrapper .text-2 {
+  font-size: 32px;
+}
+
+.while-wrapper .text-3 {
+  font-size: 48px;
+}
+
+.while-wrapper .text-4 {
+  font-size: 64px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+  font-weight: 300;
+}
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+body[theme=light] {
+  background: white;
+  color: #1a1a1a;
+}
+body[theme=light] section {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+body[theme=light] a {
+  color: black;
+}
+
+body[theme=dark] {
+  background: #1a1a1a;
+  color: #d8d8d8;
+}
+body[theme=dark] section {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+body[theme=dark] a {
+  color: white;
+}
+
+h1, h2, h3 {
+  margin: 15px;
+}
+
+article section {
+  margin: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid;
+  margin: 15px;
+}
+
+.avatar2 {
+  width: 200px;
+  height: 200px;
+  display: grid;
+  place-items: center;
+  border: 1px solid;
+  margin: 15px;
+}
 
 /*# sourceMappingURL=main.css.map */

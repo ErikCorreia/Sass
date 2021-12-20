@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+@import "base";
+@import "header";
+@import "main-container";
+@import "button";
+@import "each-for-while";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+    font-weight: 300;
+    &::-webkit-scrollbar{
+        width: 0;
+    }
+}
+
+body[theme="light"]{
+    @include theming($darkTheme: false);
+    a{color: black;}
+}
+body[theme="dark"]{
+    @include theming($darkTheme: true);
+    a{color: white;}
+}
+
+h1, h2, h3{
+    margin: 15px;
+}
+
+article section{
+    margin: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.avatar{
+    @include avatar($size: 200px, $circle: true);
+    border: 1px solid;
+    margin: 15px;
+}
+.avatar2{
+    @include avatar($size: 200px, $circle: false);
+    border: 1px solid;
+    margin: 15px;
+}

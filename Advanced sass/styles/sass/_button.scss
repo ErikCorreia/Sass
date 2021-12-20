@@ -1,0 +1,12 @@
+button{
+    margin: 15px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    height: 35px;
+    background: crimson;
+    cursor: pointer;
+    &:hover{
+        background-color: gray;
+    }
+}

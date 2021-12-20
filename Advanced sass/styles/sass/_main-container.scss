@@ -1,0 +1,38 @@
+//sass buit-in
+@use "sass:math";
+
+.main-container{
+    display: flex;
+    margin: 0 15%;
+    height: 90vh;
+    overflow: hidden;
+    aside{
+        width: math.div(20%, 100%) * 100%;
+        height:fit-content;
+        max-height: 80%;
+        margin-top: 80px;
+        padding: 15px;
+        border: 1px solid;
+        nav{
+            ul{
+                list-style: none;
+                li{
+                    margin: 15px;
+                    a{
+                        text-decoration: none;
+                        
+                        &:hover{
+                            color: gray;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    article{
+        width: math.div(80%, 100%) * 100%;
+        padding: 15px;
+        overflow-y: scroll;
+    }
+}
