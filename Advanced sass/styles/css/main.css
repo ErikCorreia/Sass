@@ -125,6 +125,22 @@ button:hover {
   font-size: 64px;
 }
 
+.while-wrapper .text-5 {
+  font-size: 80px;
+}
+
+.while-wrapper .text-6 {
+  font-size: 96px;
+}
+
+.while-wrapper .text-7 {
+  font-size: 112px;
+}
+
+.content {
+  font-family: Helvetica;
+}
+
 * {
   margin: 0;
   padding: 0;

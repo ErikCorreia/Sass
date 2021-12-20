@@ -1,19 +1,27 @@
+//buit-in sass
 @use "sass:math";
+@use "sass:list";
+@use "sass:string";
+@use "sass:meta";
 
 $sizes: 1, 2, 3, 4;
+//Percorre os valores definidos em $sizes gerando classes dinamicas e ajusta o tamanho da fonte multiplicado pelo valor em $sizes como $size
 @each $size in $sizes {
     .each-wrapper .text-#{$size}{
         font-size: math.floor(1.4em) * $size;
     }
 }
-$base-color: rgb(8, 124, 57);
 
+$base-color: rgb(8, 124, 57);
+//percorre por 10 items gerando classes dinamicas e definindo a cor e opacidade (cor: $base-color, opacidade: $i multiplicado por 10%)
 @for $i from 1 through 10 {
     .for-wrapper .text-#{$i}{
         background-color: rgba($base-color, $i * 10%)
     }
 }
 
+//função para loop while, recebe 2 valores de tamanho, emquanto o primeiro valor for menor q o segundo
+// o primeiro é dividido pelo $ratio: 1.618, e retorna o resultado
 @function scale-below($value, $base, $ratio: 1.618) {
   @while $value > $base {
     $value: math.div($value, $ratio);
@@ -21,9 +29,28 @@ $base-color: rgb(8, 124, 57);
   @return $value;
 }
 
-$normal-font-size: 16px;
-@for $i from 1 through 4 {
+@for $i from 1 through 7 {
     .while-wrapper .text-#{$i} {
-      font-size: scale-below(16px * $i, 80px);
+      font-size: scale-below(16px * $i, 120px);
     }
+}
+
+@function remove-where($list, $condition) {
+  $new-list: ();
+  $separator: list.separator($list);
+  @each $element in $list {
+    @if not meta.call($condition, $element) {
+      $new-list: list.append($new-list, $element, $separator: $separator);
+    }
+  }
+  @return $new-list;
+}
+
+$fonts: Inter, Helvetica;
+
+.content {
+  @function contains-helvetica($string) {
+    @return string.index($string, "Inter");
+  }
+  font-family: remove-where($fonts, meta.get-function("contains-helvetica"));
 }
