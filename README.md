@@ -1,10 +1,10 @@
 # Sass
 ## basic sass
-Basic sass features
+Recursos e funções basicas
 
 ## Advanced sass
-Some advanced more advanced features
+Recursos e funções mais avançado
 
-## Project with sass
+## Projects with sass
 
-A simple project using sass
+Alguns pequenos projetos utilizando html, css/sass e JavaScript.
