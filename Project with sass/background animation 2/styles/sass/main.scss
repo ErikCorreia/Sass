@@ -1,0 +1,47 @@
+@import "animations";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+body{
+    background: #212121;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    h1{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        line-height: 100vh;
+        font-size: 5vw;
+        font-weight: 100;
+        color: #fff;
+    }
+}
+
+.banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+
+    perspective: 500px;
+    .blocks{
+        position: relative;
+        display: block;
+        width: 5vw;
+        height: 5vh;
+        animation: apear 2s ease-in-out forwards;
+        animation-delay: 1s;
+    }   
+}

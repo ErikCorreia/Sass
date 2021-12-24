@@ -1,8 +1,6 @@
 //buit-in sass
 @use "sass:math";
-@use "sass:list";
-@use "sass:string";
-@use "sass:meta";
+
 
 $sizes: 1, 2, 3, 4;
 //Percorre os valores definidos em $sizes gerando classes dinamicas e ajusta o tamanho da fonte multiplicado pelo valor em $sizes como $size
@@ -33,24 +31,4 @@ $base-color: rgb(8, 124, 57);
     .while-wrapper .text-#{$i} {
       font-size: scale-below(16px * $i, 120px);
     }
-}
-
-@function remove-where($list, $condition) {
-  $new-list: ();
-  $separator: list.separator($list);
-  @each $element in $list {
-    @if not meta.call($condition, $element) {
-      $new-list: list.append($new-list, $element, $separator: $separator);
-    }
-  }
-  @return $new-list;
-}
-
-$fonts: Inter, Helvetica;
-
-.content {
-  @function contains-helvetica($string) {
-    @return string.index($string, "Inter");
-  }
-  font-family: remove-where($fonts, meta.get-function("contains-helvetica"));
 }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background image apear javascript</title>
+    <link rel="stylesheet" href="styles/css/main.css">
+</head>
+<body>
+    <section>
+        <h1> css and Javascript animations</h1>
+        <div class="banner">
+            <div class="blocks"></div>
+        </div>
+    </section>
+    
+    <script>
+        const banner = document.getElementsByClassName('banner')[0];
+        const blocks = document.getElementsByClassName('blocks');
+        
+        for(i = 1; i < 400; i++){
+            banner.innerHTML += "<div class='blocks'></div>"
+            const animationTime = Math.random() * 5;
+            blocks[i].style.animationDuration = 2+animationTime+'s';
+            blocks[i].style.animationDelay = animationTime+'s';
+        }
+
+    </script>
+    
+</body>
+</html>

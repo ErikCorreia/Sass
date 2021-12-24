@@ -1,0 +1,65 @@
+@keyframes apear {
+  0% {
+    transform: translateZ(2000px);
+    background: url(../../bg.png);
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    transform: translateZ(0px);
+    background: url(../../bg.png);
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+body {
+  background: #212121;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+section h1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  line-height: 100vh;
+  font-size: 5vw;
+  font-weight: 100;
+  color: #fff;
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  perspective: 500px;
+}
+.banner .blocks {
+  position: relative;
+  display: block;
+  width: 5vw;
+  height: 5vh;
+  animation: apear 2s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+/*# sourceMappingURL=main.css.map */

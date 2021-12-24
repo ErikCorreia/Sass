@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
+.content {
+  font-family: Helvetica;
+}
+
 header {
   border: 1px solid;
   padding: 0 15%;
@@ -137,10 +141,6 @@ button:hover {
   font-size: 112px;
 }
 
-.content {
-  font-family: Helvetica;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -150,6 +150,10 @@ button:hover {
 }
 *::-webkit-scrollbar {
   width: 0;
+}
+
+body {
+  transition: all 0.5s;
 }
 
 body[theme=light] {
@@ -201,6 +205,38 @@ article section {
   place-items: center;
   border: 1px solid;
   margin: 15px;
+}
+
+small {
+  transition: 0.5s;
+}
+
+small {
+  cursor: pointer;
+}
+
+small[message=error] {
+  padding: 10px;
+  border-bottom: 2px solid red;
+}
+small[message=error]:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+small[message=alert] {
+  padding: 10px;
+  border-bottom: 2px solid yellow;
+}
+small[message=alert]:hover {
+  background-color: rgba(255, 255, 0, 0.1);
+}
+
+small[message=success] {
+  padding: 10px;
+  border-bottom: 2px solid green;
+}
+small[message=success]:hover {
+  background-color: rgba(0, 128, 0, 0.1);
 }
 
 /*# sourceMappingURL=main.css.map */

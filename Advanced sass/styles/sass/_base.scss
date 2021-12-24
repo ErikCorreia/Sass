@@ -1,4 +1,10 @@
+@use "sass:math";
+@use "sass:list";
+@use "sass:string";
+@use "sass:meta";
+
 @mixin theming($darkTheme: true){
+  
     @if $darkTheme {
         background: #1a1a1a;
         color: #d8d8d8;
@@ -24,3 +30,36 @@
         border-radius: 50%;
     }
 }
+
+@function feedbeckControll($action){
+    
+    @if ( $action == 'error') {
+        @return 2px solid red;
+    } @else if ($action == 'alert'){
+        @return 2px solid yellow;
+    }@else if ($action == 'success'){
+        @return 2px solid green;
+    }
+    
+}
+
+@function remove-where($list, $condition) {
+    $new-list: ();
+    $separator: list.separator($list);
+    @each $element in $list {
+      @if not meta.call($condition, $element) {
+        $new-list: list.append($new-list, $element, $separator: $separator);
+      }
+    }
+    //Retorna um $elemento vazio para lista ("null")
+    @return $new-list;
+  }
+  
+  $fonts: Inter, Helvetica;
+  
+  .content {
+    @function contains-helvetica($string) {
+      @return string.index($string, "Inter");
+    }
+    font-family: remove-where($fonts, meta.get-function("contains-helvetica"));
+  }

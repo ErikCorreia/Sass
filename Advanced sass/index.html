@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
 </head>
-<body theme="light" id="body">
+<body theme="dark" id="body">
     
     <header>
         <div class="header-wrapper">
@@ -62,7 +62,7 @@
             <section id="loops">
                 <h2>Loops</h2>
                 <h3>@for</h3>
-                <div class="for-wrapper" style="display: flex; justify-content: space-around; margin: 30px;">
+                <div class="for-wrapper" style="display: flex; flex-wrap: wrap; justify-content: space-around; margin: 30px;">
                     <h4 class="text-1">Text size</h4>
                     <h4 class="text-2">Text size</h4>
                     <h4 class="text-3">Text size</h4>
@@ -75,14 +75,14 @@
                     <h4 class="text-10">Text size</h4>
                 </div>
                 <h3>@each</h3>
-                <div class="each-wrapper" style="display: flex; justify-content: space-around; margin: 30px;">
+                <div class="each-wrapper" style="display: flex; flex-wrap: wrap; justify-content: space-around; margin: 30px;">
                     <h4 class="text-1">Text size</h4>
                     <h4 class="text-2">Text size</h4>
                     <h4 class="text-3">Text size</h4>
                     <h4 class="text-4">Text size</h4>
                 </div>
                 <h3>@while</h3>
-                <div class="while-wrapper" style="display: flex; justify-content: space-around; margin: 30px;">
+                <div class="while-wrapper" style="display: flex; flex-wrap: wrap; justify-content: space-around; margin: 30px;">
                     <h4 class="text-1">Text size</h4>
                     <h4 class="text-2">Text size</h4>
                     <h4 class="text-3">Text size</h4>
@@ -95,11 +95,22 @@
 
             <section  id="funcoes">
                 <h2>Funções</h2>
-               <div style="display: flex; justify-content: space-around; margin: 30px;">
-                    <p>Função remover fonte específica</p>
-                    <p>Função remover fonte específica</p>
-                    <p class="content">Função remover fonte "Inter" definida na pagina</p>
-               </div>
+                <div style="margin: 0 30px;">
+                    <h3>Função para remover fonte "Inter"</h3>
+                    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin: 30px;">
+                         <p>Função remover fonte específica</p>
+                         <p>Função remover fonte específica</p>
+                         <p class="content">Função remover fonte "Inter" definida na pagina</p>
+                    </div>
+                </div>
+                <div style="margin: 0 30px;">
+                    <h4>Controle de feedback de erros</h3>
+                    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin: 10px 30px;">
+                        <small message="error">Something wrong happened</small>
+                        <small message="alert">Something bad happened</small>
+                        <small message="success">Success</small>
+                    </div>
+                </div>
             </section>
 
         </article>
