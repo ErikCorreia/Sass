@@ -33,8 +33,8 @@ section{
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
+    //"perspective: 500px" referencia importante para mecher com a profundidade doelemento na tela
     transform-style: preserve-3d;
-
     perspective: 500px;
     .blocks{
         position: relative;
